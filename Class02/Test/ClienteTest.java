@@ -20,7 +20,6 @@ class ClienteTest {
     public void casoTeste1(){
         cli.setNome("Charles");
         assertEquals("Charles",cli.getNome());
-
     }
 
     @Test
@@ -52,5 +51,4 @@ class ClienteTest {
     public void casoTeste5(){
         assertTrue(true);
     }
-
 }

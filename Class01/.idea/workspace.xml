@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c2783ba-883d-47ec-a4ab-6443fc4e00c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Class01.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PessoaTeste/PessoaTestTC1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PrincipalPessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Class02/Test/ClienteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Class02/Test/ClienteTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8c2783ba-883d-47ec-a4ab-6443fc4e00c2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/s02e01_PrimeiroCasoTeste" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Class02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,6 +54,7 @@
       <updated>1661276759472</updated>
       <workItem from="1661276760853" duration="1181000" />
       <workItem from="1661278008864" duration="234000" />
+      <workItem from="1661278404221" duration="37000" />
     </task>
     <servers />
   </component>
