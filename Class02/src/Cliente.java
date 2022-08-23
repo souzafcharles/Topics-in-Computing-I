@@ -1,10 +1,12 @@
 public class Cliente {
     private String nome;
     private String rg;
+    private String endereco;
 
-    public Cliente(String nome, String rg) {
+    public Cliente(String nome, String rg, String endereco) {
         this.nome = nome;
         this.rg = rg;
+        this.endereco = endereco;
     }
 
     public String getNome() {
@@ -23,11 +25,20 @@ public class Cliente {
         this.rg = rg;
     }
 
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", rg='" + rg + '\'' +
+                ", endereco='" + endereco + '\'' +
                 '}';
     }
 }
