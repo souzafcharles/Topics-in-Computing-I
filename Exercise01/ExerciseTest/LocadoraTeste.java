@@ -56,5 +56,4 @@ public class LocadoraTeste {
                 () -> assertEquals("Numa galáxia muito distante...",dvd02.getDescrição())
         );
     }
-
 }
