@@ -44,14 +44,15 @@ public class Veiculo {
         this.potenciaMotor = potenciaMotor;
     }
 
-    public Veiculo clona(Veiculo veiculo_a_ser_clonado){
+     public Veiculo clona(Veiculo veiculo_a_ser_clonado){
         return new Veiculo(veiculo_a_ser_clonado.getTipoVeiculo(), veiculo_a_ser_clonado.getChassi(),
-                veiculo_a_ser_clonado.getNumeroRodas(), veiculo_a_ser_clonado.potenciaMotor);
+                veiculo_a_ser_clonado.getNumeroRodas(), veiculo_a_ser_clonado.getPotenciaMotor());
     }
-
     public int compara(Veiculo veiculo_a_ser_comparado1, Veiculo veiculo_a_ser_comparado2){
-        if (veiculo_a_ser_comparado1.getChassi().equals(veiculo_a_ser_comparado2.getChassi()))
-            return 1;
-        return 0;
+        if(veiculo_a_ser_comparado1.getChassi().equals(veiculo_a_ser_comparado2.getChassi())){
+            return 1; 
+        }else{
+            return 0;
+        }
     }
 }
