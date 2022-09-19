@@ -32,7 +32,7 @@ class VeiculoTest {
     @NullAndEmptySource
     @DisplayName("Verifica o teste de dois valores de String")
     @ValueSource(strings = {"valor1","valor2"})
-    public void teste(String str){
+    public void casoTeste2(String str){
         Veiculo veiculo = new Veiculo(TipoVeiculo.TERRESTRE,"12345A", 4, 2.2);
         veiculo.setChassi(str);
         System.out.println("str: "+str);
@@ -42,7 +42,7 @@ class VeiculoTest {
     @ParameterizedTest
     @DisplayName("Verifica a parametrização dos testes de veiculos")
     @MethodSource("VeiculosArgumentos")
-    public void checkCompareVehicle(TipoVeiculo tipoVeiculo, String chassis, Integer numeroRodas, Double potenciaMotor) {
+    public void casoTeste2(TipoVeiculo tipoVeiculo, String chassis, Integer numeroRodas, Double potenciaMotor) {
         Veiculo veiculoParametrizado = new Veiculo(tipoVeiculo, chassis, numeroRodas, potenciaMotor);
         Veiculo veiculoClonado = veiculo.clona(veiculoParametrizado);
         assertEquals(1, veiculoClonado.compara(veiculoParametrizado, veiculoClonado));
@@ -57,14 +57,14 @@ class VeiculoTest {
     @ParameterizedTest
     @EnumSource
     @DisplayName("Verifica o teste de Enum")
-    public void testeEnum(TipoVeiculo tipoVeiculo){
+    public void casoTeste3(TipoVeiculo tipoVeiculo){
         System.out.println(tipoVeiculo);
         assertEquals(tipoVeiculo,tipoVeiculo);
     }
 
     @RepeatedTest(value = 5, name = "{displayName}: #{currentRepetition} veiculo")
     @DisplayName("Verifica teste de repetição")
-    public void createRepeatedVehicle(RepetitionInfo rep) {
+    public void casoTeste4(RepetitionInfo rep) {
         veiculos.add(veiculo);
         assertEquals(rep.getCurrentRepetition(), veiculos.size());
     }
