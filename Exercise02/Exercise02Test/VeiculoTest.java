@@ -20,6 +20,7 @@ class VeiculoTest {
         veiculo = new Veiculo (TipoVeiculo.TERRESTRE,"C12345A", 4, 1.4);
     }
 
+    @Order(1)
     @Test
     @EnabledOnOs({OS.WINDOWS})
     @Tag("ICorreto")
@@ -28,6 +29,7 @@ class VeiculoTest {
         assertEquals(TipoVeiculo.TERRESTRE,veiculo.getTipoVeiculo());
     }
 
+    @Order(2)
     @ParameterizedTest
     @NullAndEmptySource
     @DisplayName("Verifica o teste de dois valores de String")
@@ -39,6 +41,20 @@ class VeiculoTest {
         assertEquals(str,veiculo.getChassi());
     }
 
+    
+    @Order(3)
+    @Test
+    @DisplayName("Verifica assert All")
+    public void casoTeste04(){
+        assertAll("veiculo",
+                () -> assertEquals(TipoVeiculo.TERRESTRE,veiculo.getTipoVeiculo()),
+                () -> assertEquals("C1234A",veiculo.getChassi()),
+                () -> assertEquals(4,veiculo.getNumeroRodas()),
+                () -> assertEquals(1.0,veiculo.getPotenciaMotor())
+        );
+    }
+
+    @Order(4)
     @ParameterizedTest
     @DisplayName("Verifica a parametrização dos testes de veiculos")
     @MethodSource("VeiculosArgumentos")
@@ -54,6 +70,7 @@ class VeiculoTest {
         );
     }
 
+    @Order(5)
     @ParameterizedTest
     @EnumSource
     @DisplayName("Verifica o teste de Enum")
@@ -62,6 +79,7 @@ class VeiculoTest {
         assertEquals(tipoVeiculo,tipoVeiculo);
     }
 
+    @Order(6)
     @RepeatedTest(value = 5, name = "{displayName}: #{currentRepetition} veiculo")
     @DisplayName("Verifica teste de repetição")
     public void casoTeste4(RepetitionInfo rep) {
