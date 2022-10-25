@@ -10,9 +10,9 @@ public class TesteSelenium {
         String chromeDriverPath = projectPath + "\\lib\\chromedriver\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         WebDriver driver = new ChromeDriver();
-        driver.get("http://localhost/TC1/exercice04.html");
+        driver.get("http://localhost/TC1/exercice02.html");
         driver.manage().window().maximize();
-        WebElement dropDown = driver.findElement(By.xpath("//*[@id=\"gatos\"]"));
+        WebElement dropDown = driver.findElement(By.xpath("//*[@id=\"caes\"]"));
         if (dropDown.isDisplayed()) {
             System.out.println("A lista está sendo mostrada!");
         } else {
@@ -25,9 +25,10 @@ public class TesteSelenium {
         }
         Select ddList = new Select((dropDown));
 
-        ddList.selectByVisibleText("Cinza");
-        ddList.selectByValue("B");
+        //ddList.selectByVisibleText("Afegão Hound");
+        //ddList.selectByValue("H");
         ddList.selectByIndex(2);
     }
 }
+
 
